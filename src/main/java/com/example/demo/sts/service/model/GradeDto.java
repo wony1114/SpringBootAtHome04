@@ -2,11 +2,9 @@ package com.example.demo.sts.service.model;
 
 import org.springframework.stereotype.Component;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Component @Getter @Setter
+@Component @Data
 public class GradeDto{
-    protected String kor, eng, math;
-    protected int memberId;
+    private String gradeNum, subject, score, grade, stuNum;
 }

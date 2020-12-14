@@ -2,10 +2,9 @@ package com.example.demo.sym.service.model;
 
 import org.springframework.stereotype.Component;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Component @Getter @Setter
+@Component @Data
 public class TeacherDto{
-    protected String accessKey;
+   private String teaNum, name, password, subject;
 }

@@ -6,5 +6,5 @@ import lombok.Data;
 
 @Component @Data
 public class ReplyDto extends ArticleDto{
-    protected int replyId;
+    private String replyNum, content, artNum;
 }
