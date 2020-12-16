@@ -24,8 +24,7 @@ import org.slf4j.LoggerFactory;
 @RequestMapping("/students")
 public class StudentController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-    @Autowired
-    StudentService studentService;
+    @Autowired StudentService studentService;
 
     @PostMapping("")
     public Map<?, ?> register(@RequestBody StudentDto student) {
@@ -55,8 +54,7 @@ public class StudentController {
     @GetMapping("")
     public List<?> list(){
         logger.info("===학생목록조회===");
-         return studentService.list();
-        
+         return studentService.list();      
     }
-
+  
 }

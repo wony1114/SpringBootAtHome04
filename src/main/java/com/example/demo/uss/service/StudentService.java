@@ -16,4 +16,5 @@ public interface StudentService {
 	public StudentDto detail(String userid);
 
 	public List<?> list();
+
 }
